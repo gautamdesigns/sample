@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>A Simple Layout Of A Website</title>
+	<style>
+		.navbar {
+			position: fixed;
+			background: linear-gradient(to top, #000000, #ababab);
+			border-radius: 30px;
+			padding: 0px 0px;
+			margin: 0px 67px;
+			max-width: 100vw;
+			height: auto;
+		}
+
+		.navbar ul {
+			list-style-type: none;
+		}
+
+		.navbar li {
+			display: inline;
+			font-size: 22px;
+			padding: 10px;
+			margin: 50px;
+		}
+
+		.navbar li a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+
+		:root a:hover {
+			color: red;
+		}
+
+		.text {
+			margin-left: 70px;
+			font-size: 36px;
+		}
+
+		main {
+			padding-top: 40px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.logo-container {
+			position: fixed;
+			bottom: 10px;
+			right: 0px;
+		}
+
+		.sticky-logo {
+			max-width: 10vw;
+			height: auto;
+			display: block;
+		}
+
+		.section {
+			text-align: center;
+		}
+
+		.footer {
+			text-align: center;
+			background-color: black;
+			width: 100vw;
+			vertical-align: middle;
+			text-decoration: none;
+			color: #fff;
+			font-family: arial;
+		}
+
+		.gallery-row {
+			display: flex;
+			width: 100vw;
+			justify-content: center;
+			border: 2px solid rgb(255 0 0);
+			box-shadow: 0 0px 40px rgb(0 0 0);
+		}
+
+		.gallery-item {
+			margin: 10px;
+			width: 25vw;
+			height: auto;
+			border: 2px solid rgb(255 255 255);
+			box-shadow: 0 0px 10px rgb(255 0 0);
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1 class="section" id="home">A Simple Layout Of A Website</h1>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="#author">Author</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<br><br>
+		<h2 class="section" id="about">About HTML</h2><br><br><br>
+		<p class="text">HTML (Hypertext Markup Language) is the backbone of web development, serving as a standard for structuring content on the internet. It consists of tags that envelop content, and these tags come in pairs, with an opening tag &lttag&gt and a closing tag &lt/tag&gt. This pairing defines the structure and presentation of a web page. Elements, comprised of tags and the content they enclose, are the fundamental building blocks of HTML. For example,&lth1&gtHello World&lt/h1&gt is an element with an opening &lth1&gt tag, content ("Hello World"), and a closing &lt/h1&gt tag.cument follows a predefined structure, beginning with &lt!DOCTYPE html&gt to specify the document type. The core content resides within &lthtml&gt tags, where &lthead&gt contains metadata and &ltbody&gt holds the visible content. HTML tags can also have attributes, like the "src" attribute in the &ltimg&gt tag for specifying image sources. Additionally, HTML enables the creation of hyperlinks through the &lta&gt (anchor) tag, facilitating the connection between web pages or resources.HTML serves as the foundation for web content, complemented by CSS (Cascading Style Sheets) for styling and JavaScript for interactivity. Together, they empower the creation of dynamic and visually appealing websites.</p>
+
+		<h2 class="section" id="services">Services</h2><br><br><br>
+		<p class="text">
+			HTML (Hypertext Markup Language) plays a pivotal role in web development, serving several key functions. Firstly, it provides the structural framework for web content by defining the layout and organization of elements on a webpage. It uses a system of tags and elements to create headings, paragraphs, images, links, forms, and more, enabling the presentation of information in a structured manner.Secondly, HTML serves as the foundation for creating hyperlinks, connecting various web pages, documents, and resources. It enables users to navigate seamlessly through a website and explore related content, enhancing the user experience.Moreover, HTML supports the integration of multimedia elements, such as images, audio, and video, enriching the content and making it more engaging for visitors.Additionally, HTML is essential for accessibility, as it allows the inclusion of metadata and alternative text to assist users with disabilities in understanding and interacting with web content.Lastly, HTML, when combined with CSS (Cascading Style Sheets) and JavaScript, provides the basis for web design and interactivity, facilitating the creation of visually appealing and dynamic websites. In summary, HTML's functions encompass structuring content, enabling navigation, supporting multimedia, enhancing accessibility, and serving as a foundation for web development and user engagement.</p>
+		<h2 class="section" id="gallery">Gallery</h2><br><br><br>
+		<div class="gallery-row">
+			<div class="gallery-item">
+				<img src="https://github.com/gautamdesigns/sample/blob/main/html_ghost.png?raw=true" alt="Image">
+			</div>
+			<div class="gallery-item">
+				<img src="https://github.com/gautamdesigns/sample/blob/main/html.png?raw=true" alt="Image">
+			</div>
+			<div class="gallery-item">
+				<img src="https://github.com/gautamdesigns/sample/blob/main/htm%20l.png?raw=true" alt="Image">
+			</div>
+			<div class="gallery-item">
+				<img src="https://github.com/gautamdesigns/sample/blob/main/hcj.png?raw=true" alt="Image">
+			</div>
+		</div>
+
+	</main>
+	<footer>
+		<h2 class="section" id="contact">Contact Us</h2><br><br><br>
+		<p class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu vel libero scelerisque tristique id at velit. Vestibulum eget lorem vitae erat varius tristique sit amet et metus. Fusce convallis scelerisque neque ut ullamcorper. In sit amet elit massa. Cras tristique erat sit amet bibendum. Maecenas ut euismod odio. Nam vitae dui in nulla egestas vehicula. Donec facilisis ac tortor vel tristique. Fusce nec vulputate augue. Curabitur sit amet odio dui. Pellentesque placerat ac tellus eget eleifend. Sed lacinia, nunc ac sollicitudin convallis, justo justo bibendum justo, a accumsan justo augue nec lectus. Sed id sem a turpis lacinia egestas in ac justo.
+
+			Pellentesque eget malesuada velit. Nunc tristique neque et magna malesuada, eu venenatis justo malesuada. Fusce hendrerit eget ante at egestas. Cras ut fermentum justo. Nulla facilisi. Nullam id libero vel ligula finibus ultrices. Suspendisse potenti. Quisque eget orci eu quam euismod fringilla sit amet id ex. Integer eu aliquam eros. Suspendisse scelerisque purus sit amet velit dictum, in venenatis sem fringilla.</p>
+		<div class=" logo-container">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="Sticky Image" class="sticky-logo">
+		</div>
+		<table class="footer" id="author">
+			<tr>
+				<td>
+					<h4>
+						<a class="footer" href="tac.html">Terms and Conditions</a> | <a class="footer" href="pp.html">Privacy Policy</a>
+					</h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="footer">© 2023 All rights reserved.<br>Crafted by <b>Gautam Kumar</b> with <b>❤</b> and code.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</footer>
+
+</body>
+
+</html>
